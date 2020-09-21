@@ -91,11 +91,6 @@
 		margin-left: 0px;
 	}
 
-	#banner img{
-		display: ;
-	}
-	
-
 /* Basic */
 
 	@-ms-viewport {
@@ -273,8 +268,66 @@
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		box-sizing: border-box;
+		box-sizing: border-box 15px	15px;
 		align-items: stretch;
+	}
+
+	.rowLas{
+		
+		display: grid;
+		/*grid-template-columns: [pic] 25% [description] 75%;*/
+		grid-template-columns: 25% 75%;
+		grid-template-rows: [sararow] 1fr [ritarow] 1fr [concrow] 1fr [olgarow] 1fr
+		/*border-top:  rgb(249, 119, 162) solid;*/
+		
+	}
+
+	.rowLas .sara{
+		background-image: url(/images/sara.jpg);
+		background-position: center;
+		background-size: cover ;
+		margin-right: 20px; 
+		margin-bottom: 20px;
+		margin-top: 20px;
+		border-radius: 40%;
+		text-align: center;
+		
+	}
+
+	.rowLas .rita{
+		background-image: url(/images/pic05.jpg);
+		background-position: center;
+		background-size: cover;
+		margin-right: 20px; 
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 40%;
+		
+	}
+
+	.rowLas .conceicao{
+		background-image: url(/images/conceicao.jpg);
+		background-position: center;
+		background-size:cover ;
+		margin-right: 20px; 
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 40%;
+	}
+
+	.rowLas .olga{
+		background-image: url(/images/olga.jpg);
+		background-position: center;
+		background-size:cover ;
+		margin-right: 20px; 
+		margin-top: 20px;
+		border-radius: 40%;
+	}
+
+	.rowLas p{
+		margin-top: 2em;
+		text-align: justify;
+		text-align: ;
 	}
 
 		.row > * {
@@ -1499,6 +1552,68 @@
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+
+			.rowLas{
+		
+				/*grid-template-columns: [pic] 25% [description] 75%;*/
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: [sararow] 25% [sararow1] auto [ritarow] 25% [ritarow1] auto [concrow] 25% [concrow1] auto [olgarow] 25% [olgarow1] auto
+				/*border-top:  rgb(249, 119, 162) solid;*/
+				
+			}
+
+				.rowLas #sara{
+					background-attachment: fixed;
+					background-image: url(/images/sara.jpg);
+					background-size: contain;
+					size: auto;
+				}
+
+				.rowLas .sara{
+					background-image: url(/images/sara.jpg);
+					background-position: center;
+					background-size: contain ;
+					background-repeat: no-repeat;
+					margin-right: 20px; 
+					border-radius: 40%;
+					
+				}
+			
+				.rowLas .rita{
+					background-image: url(/images/pic05.jpg);
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-right: 20px; 
+
+					border-radius: 40%;
+				}
+			
+				.rowLas .conceicao{
+					background-image: url(/images/conceicao.jpg);
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-right: 20px; 
+					margin-top: 20px;
+					margin-bottom: 20px;
+					border-radius: 40%;
+				}
+			
+				.rowLas .olga{
+					background-image: url(/images/olga.jpg);
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-right: 20px; 
+					margin-top: 20px;
+					border-radius: 40%;
+				}
+
+				.rowLas p{
+					margin-top: ;
+					text-align: justify;
+				}
 
 				.row > * {
 					box-sizing: border-box;
@@ -3100,7 +3215,7 @@
 		}
 
 			#header.alt nav > ul > li a:not(.button).icon:before {
-				color: rgba(255, 255, 255, 0.75);
+				color: rgb(89, 89, 89);
 			}
 
 			#header.alt nav > ul > li.active a:not(.button) {
