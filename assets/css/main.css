@@ -89,9 +89,11 @@
 		color: rgb(89, 89, 89);
 		padding: 0px;
 		margin-left: 0px;
-		
 	}
 
+	#banner img{
+		display: ;
+	}
 	
 
 /* Basic */
@@ -2289,7 +2291,12 @@
 			border-top: solid 2px #e5e5e5;
 			position: relative;
 		}
-
+		
+		/*Product's characteristics */
+		.box.features .features-row img{
+			max-width: 50%;
+			align-self: center;
+		}
 			.box.features .features-row:after {
 				clear: both;
 				content: '';
@@ -2416,7 +2423,7 @@
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.major {
+		/*.icon.major {
 			background: #666;
 			border-radius: 100%;
 			color: #ffffff;
@@ -2448,14 +2455,14 @@
 			}
 
 			.icon.major.accent4 {
-				background: #90b0ba;
+				background: #2d520c;
 				color: #ffffff;
 			}
 
 			.icon.major.accent5 {
 				background: #e5cb95;
 				color: #ffffff;
-			}
+			}*/
 
 /* Image */
 
@@ -3184,12 +3191,12 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
+		background-attachment: scroll, fixed;
 		/*background-color: #666;*/
 		background-image: url("/images/BannerNew.jpeg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-position: center, center, center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: auto, cover;
 		color: black;
 		padding: 12em 0 20em 0;
 		text-align: center;
@@ -3197,7 +3204,7 @@
 
 	/*Imagem do banner*/
 	#banner img{
-		max-width: 70%;
+		max-width: 90%;
 	}
 
 		#banner :last-child {
