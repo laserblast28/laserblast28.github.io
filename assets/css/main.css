@@ -2383,9 +2383,10 @@
 		
 		/*Product's characteristics */
 		.box.features .features-row img{
-			max-height: 25%;
+			max-block-size: 120px;
 			align-self: center;
 		}
+
 			.box.features .features-row:after {
 				clear: both;
 				content: '';
