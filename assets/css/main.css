@@ -277,57 +277,51 @@
 		display: grid;
 		/*grid-template-columns: [pic] 25% [description] 75%;*/
 		grid-template-columns: 25% 75%;
-		grid-template-rows: [sararow] 1fr [ritarow] 1fr [concrow] 1fr [olgarow] 1fr
+		grid-template-rows: [sararow] 1fr [ritarow] 1fr [concrow] 1fr [olgarow] 1fr;
+		row-gap: 25px;
 		/*border-top:  rgb(249, 119, 162) solid;*/
-		
 	}
 
 	.rowLas .sara{
 		background-image: url(/images/sara.jpg);
 		background-position: center;
-		background-size: cover ;
-		margin-right: 20px; 
-		margin-bottom: 20px;
-		margin-top: 20px;
-		border-radius: 40%;
-		text-align: center;
-		
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-right: 20px;
+
 	}
 
 	.rowLas .rita{
-		background-image: url(/images/pic05.jpg);
+		background-image: url(/images/rita.jpg);
 		background-position: center;
-		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: contain;
 		margin-right: 20px; 
-		margin-top: 20px;
-		margin-bottom: 20px;
-		border-radius: 40%;
-		
 	}
 
 	.rowLas .conceicao{
 		background-image: url(/images/conceicao.jpg);
 		background-position: center;
-		background-size:cover ;
+		background-repeat: no-repeat;
+		background-size: contain;
 		margin-right: 20px; 
-		margin-top: 20px;
-		margin-bottom: 20px;
-		border-radius: 40%;
 	}
 
 	.rowLas .olga{
 		background-image: url(/images/olga.jpg);
 		background-position: center;
-		background-size:cover ;
+		background-repeat: no-repeat;
+		background-size: contain;
 		margin-right: 20px; 
-		margin-top: 20px;
-		border-radius: 40%;
+	
 	}
 
 	.rowLas p{
 		margin-top: 2em;
 		text-align: justify;
-		text-align: ;
+		justify-content: center;
+		align-content: center;
+		align-self: center;
 	}
 
 		.row > * {
@@ -1562,31 +1556,19 @@
 				
 			}
 
-				.rowLas #sara{
-					background-attachment: fixed;
-					background-image: url(/images/sara.jpg);
-					background-size: contain;
-					size: auto;
-				}
-
 				.rowLas .sara{
 					background-image: url(/images/sara.jpg);
 					background-position: center;
 					background-size: contain ;
-					background-repeat: no-repeat;
-					margin-right: 20px; 
-					border-radius: 40%;
-					
+					background-repeat: no-repeat;		
 				}
 			
 				.rowLas .rita{
-					background-image: url(/images/pic05.jpg);
+					background-image: url(/images/rita.jpg);
 					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
-					margin-right: 20px; 
 
-					border-radius: 40%;
 				}
 			
 				.rowLas .conceicao{
@@ -1594,10 +1576,6 @@
 					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
-					margin-right: 20px; 
-					margin-top: 20px;
-					margin-bottom: 20px;
-					border-radius: 40%;
 				}
 			
 				.rowLas .olga{
@@ -1605,13 +1583,9 @@
 					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
-					margin-right: 20px; 
-					margin-top: 20px;
-					border-radius: 40%;
 				}
 
 				.rowLas p{
-					margin-top: ;
 					text-align: justify;
 				}
 
@@ -2409,7 +2383,7 @@
 		
 		/*Product's characteristics */
 		.box.features .features-row img{
-			max-width: 50%;
+			max-height: 25%;
 			align-self: center;
 		}
 			.box.features .features-row:after {
@@ -3111,6 +3085,7 @@
 			right: 0.75em;
 			top: 0;
 			vertical-align: middle;
+			color: #fff;
 		}
 
 			#header nav > ul {
@@ -3309,17 +3284,17 @@
 		background-attachment: scroll, fixed;
 		/*background-color: #666;*/
 		background-image: url("/images/BannerNew.jpeg");
-		background-position: center, center, center;
+		background-position: top, center, center;
 		background-repeat: no-repeat, no-repeat;
-		background-size: auto, cover;
+		background-size: cover, cover;
 		color: black;
-		padding: 12em 0 20em 0;
+		padding: 12em 0 12em 0;
 		text-align: center;
 	}
 
 	/*Imagem do banner*/
 	#banner img{
-		max-width: 90%;
+		width: 55%;		
 	}
 
 		#banner :last-child {
@@ -3342,7 +3317,7 @@
 			margin-bottom: 1.75em;
 		}
 
-		#banner input[type="submit"],
+		/*#banner input[type="submit"],
 		#banner input[type="reset"],
 		#banner input[type="button"],
 		#banner .button {
@@ -3372,7 +3347,7 @@
 			#banner .button.primary {
 				background: #fff;
 				color: #666 !important;
-			}
+			}*/
 
 /* Main */
 
@@ -3407,7 +3382,7 @@
 
 	#footer {
 		background: #f0f0f0;
-		padding: 4em 0 6em 0;
+		padding: 2em 0 2em 0;
 		text-align: center;
 	}
 
